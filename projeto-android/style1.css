@@ -1,0 +1,50 @@
+@charset "UFT-8";
+@font-face {
+    font-family: 'idroid';
+    src: url('fontes/idroid.otf') format('opentype');
+}
+
+body {
+    background-color: rgb(211, 207, 207);
+}
+
+header {
+    background-image: linear-gradient(to right, rgb(56, 150, 56), rgb(49, 116, 49), rgb(5, 56, 5));
+    color: aqua;
+    padding-top: 20px;
+}
+
+header > h1 {
+    color: rgb(218, 213, 213);
+    text-align: center;
+    
+}
+header > h2 {
+    color: rgb(218, 213, 213);
+    text-align: center;
+    font-size: 14px;
+    margin: 30px;
+}
+
+section {
+    background-color: white;
+    margin: 0px 50px 0px 50px;
+
+}
+
+h2 {
+    font-family: 'idroid';
+}
+
+h3 {
+    font-family: 'idroid';
+    background-image: linear-gradient(to right, green, rgba(61, 134, 61, 0.651), rgba(103, 133, 103, 0.651));
+}
+
+
+nav > a {
+    color: white;
+    margin: 0px 50px 0px 0px 
+    
+}
+
