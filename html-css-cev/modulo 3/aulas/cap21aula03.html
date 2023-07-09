@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela</title>
+    <style>
+       body {
+        font-family: Arial, Helvetica, sans-serif;
+       }
+
+        table {
+            width: 600px;
+            border-collapse: collapse;
+            position: relative;
+        }
+
+        thead, tfoot {
+            color: white;
+            background-color: rgb(116, 111, 111);
+          
+            
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px 50px;
+            text-align: center;
+
+        }
+
+        #cabecalho {
+            background-color: rgb(80, 76, 76);
+            color: white;
+        }
+
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
+            padding: 10px;
+            background-color: rgb(14, 13, 13);
+            color: white;
+        }
+
+        tbody > tr:nth-child(2n) { /*muda cor das colunas anternadamente*/
+            background-color: wheat;
+        }
+
+        thead > tr > th { /*fixa o título do cabeçalho*/
+            position: sticky;
+            top: 0;
+            color: white;
+            background-color: rgb(116, 111, 111);
+        }
+        
+
+    </style>
+</head>
+<body>
+    
+    <h1>Tabela Simples</h1>
+    
+    <!--Hierarquia de Tabelas
+    TABLE=TABELA
+    TABLE ROW (tr)= linha da tabela
+    TEBLE HEADER (tr) = cabeçalho
+    TABLE DATA (td) = dados-->
+    <table>
+        <tr id="cabecalho">
+            <td>A1</td>
+            <td>B1</td>
+            <td>C1</td>
+        </tr>
+    
+        <tr>
+            <td>A2</td>
+            <td>B2</td>
+            <td>C2</td>
+        </tr>
+    
+        <tr>
+            <td>A3</td>
+            <td>B3</td>
+            <td>C3</td>
+        </tr>
+    
+        <tr>
+            <td>A4</td>
+            <td>B4</td>
+            <td>C4</td>
+        </tr>
+    
+        <!--HIERARQUIA TABELAS GRANDES
+        
+        TABLE
+            CAPTION
+            THEAD
+                TR, TD, TH
+            TBODY
+                TR, TD, TH
+            TFOOT
+                TR, TD, TH-->
+    
+    </table>
+    
+    
+    <h1>Tabela Grande</h1>
+    
+    <table>
+        <caption>Tabela de População dos Estados</caption>
+        <thead>
+            <tr>
+                <th scope="col">Estado</th>
+                <th scope="col" style="width: 50px;">População</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>São Paulo</td>
+                <td>45.919.049</td>
+            </tr>
+            <tr>
+                <td>Minas Gerais</td>
+                <td>21 264 943</td>
+            </tr>
+            <tr>
+                <td>Rio de Janeiro</td>
+                <td>17 624 543</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <th scope="row">Total de Habitantes</th>
+                <th scope="row">210 147 125</th>
+            </tr>
+        </tfoot>
+    
+    </table>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus est nam quam dicta ipsam nostrum? Officiis, libero eos temporibus reiciendis quisquam maxime ea similique consequuntur, voluptas sunt totam laudantium adipisci. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, qui. Ipsam, obcaecati recusandae. Odio nesciunt asperiores nobis aut fuga dolor pariatur veritatis! Possimus commodi suscipit inventore laborum repellendus perferendis maiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur mollitia nisi id quas harum at illum libero, dolores rem, labore reiciendis minus neque fugiat beatae voluptates, veritatis cupiditate non eveniet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio exercitationem nostrum tempore et nisi ducimus quia animi inventore eius blanditiis rem quos itaque officiis expedita, dicta, fugit placeat voluptatum sapiente.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus est nam quam dicta ipsam nostrum? Officiis, libero eos temporibus reiciendis quisquam maxime ea similique consequuntur, voluptas sunt totam laudantium adipisci. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, qui. Ipsam, obcaecati recusandae. Odio nesciunt asperiores nobis aut fuga dolor pariatur veritatis! Possimus commodi suscipit inventore laborum repellendus perferendis maiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur mollitia nisi id quas harum at illum libero, dolores rem, labore reiciendis minus neque fugiat beatae voluptates, veritatis cupiditate non eveniet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio exercitationem nostrum tempore et nisi ducimus quia animi inventore eius blanditiis rem quos itaque officiis expedita, dicta, fugit placeat voluptatum sapiente.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus est nam quam dicta ipsam nostrum? Officiis, libero eos temporibus reiciendis quisquam maxime ea similique consequuntur, voluptas sunt totam laudantium adipisci. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, qui. Ipsam, obcaecati recusandae. Odio nesciunt asperiores nobis aut fuga dolor pariatur veritatis! Possimus commodi suscipit inventore laborum repellendus perferendis maiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur mollitia nisi id quas harum at illum libero, dolores rem, labore reiciendis minus neque fugiat beatae voluptates, veritatis cupiditate non eveniet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio exercitationem nostrum tempore et nisi ducimus quia animi inventore eius blanditiis rem quos itaque officiis expedita, dicta, fugit placeat voluptatum sapiente.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus est nam quam dicta ipsam nostrum? Officiis, libero eos temporibus reiciendis quisquam maxime ea similique consequuntur, voluptas sunt totam laudantium adipisci. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Obcaecati, qui. Ipsam, obcaecati recusandae. Odio nesciunt asperiores nobis aut fuga dolor pariatur veritatis! Possimus commodi suscipit inventore laborum repellendus perferendis maiores? Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur mollitia nisi id quas harum at illum libero, dolores rem, labore reiciendis minus neque fugiat beatae voluptates, veritatis cupiditate non eveniet. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Odio exercitationem nostrum tempore et nisi ducimus quia animi inventore eius blanditiis rem quos itaque officiis expedita, dicta, fugit placeat voluptatum sapiente.</p>
+</body>
+
+</html>

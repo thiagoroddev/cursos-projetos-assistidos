@@ -1,0 +1,42 @@
+@charset "UTF-8";
+
+/* id em HTMML em CSS= #
+   class em HTML em CSS= .*/
+
+body {
+    background-color: antiquewhite;
+    font: normal Arial 16px sans-serif
+}
+
+h1 {
+    color: rgb(198, 235, 36);
+}
+
+h2 {
+    color: brown;
+}
+
+h1#principal {
+    color: black;
+    text-align: center;
+}
+
+.basico {
+    color: rgb(59, 92, 92);
+}
+
+.medio {
+    color: rgb(37, 199, 32);
+}
+
+.avançado {
+    color: rgb(26, 23, 187);
+}
+
+.titulo {
+    color: rgb(226, 21, 134);
+}
+
+.destaque {
+    background-color: rgb(12, 12, 12);
+}

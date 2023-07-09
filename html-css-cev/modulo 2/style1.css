@@ -1,0 +1,40 @@
+@charset "UFT-8";
+
+* {
+    
+
+}
+
+body {
+    background-image: linear-gradient(to right, blue, rgb(70, 70, 230), rgb(51, 190, 233));
+}
+
+main {
+    background-image: linear-gradient(to right, #4E4B70, #665AF2, #A7A1F0);
+    border-radius: 10px;
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.699);
+    width: 600px;
+    margin: auto;
+    
+    
+}
+
+h1 {
+    color: rgba(5, 4, 4, 0.925);
+    box-shadow: 2px 2px 3px rgba(238, 227, 227, 0.849);
+    text-shadow: 1px 1px 1px rgba(228, 216, 216, 0.719);
+    text-align: center;
+    
+}
+
+h2 {
+    color: rgba(206, 205, 219, 0.836) ;
+    
+    
+}
+
+p { 
+    text-align: center;
+    text-justify: auto;
+    
+}

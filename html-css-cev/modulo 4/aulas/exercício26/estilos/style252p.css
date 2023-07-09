@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+/*Versão para IMPRESSORA*/
+
+* {
+    padding: 0px;
+    margin: 0px;
+}
+
+body {
+
+    font-family: serif
+}
+
+header {
+    background-color: rgb(20, 211, 245);
+    color: brown;
+    margin: 20px;
+}
+
+menu > a {
+    display: none;
+   
+}
+
+h2 {
+    display: none;
+}
+
+article::after {
+    content:     
+     "Versão para IMPRESSORA";
+}

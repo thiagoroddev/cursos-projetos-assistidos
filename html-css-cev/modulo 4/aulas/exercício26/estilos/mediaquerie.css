@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+/*Principal = Mobile First
+320px — 480px: dispositivos móveis
+481px — 768px: iPads, tablets
+769px — 1024px: telas pequenas, laptops
+1025px — 1200px: desktops, telas grandes
+1201px e acima —  telas muito grandes, TVs
+*/
+@media print { /* Impressora*/
+    #icon-phone { display:  none;}
+    #icon-print{ display:  block;}
+
+    main {
+        border: 2 solid black;
+    }
+
+    h1 {
+        color: blue;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px){ /*Tablet*/
+    body {
+        background-image: url("../imagens/back-tablet.jpg");
+    }
+    #icon-tablet { display:  block;}
+    #icon-phone { display:  none;}
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1200px) { /*PC*/
+    
+   /*DEStoP*/
+    body {
+        background-image: url("../imagens/back-pc.jpg");
+        #icon-phone { display:  none;}
+        #icon-pc { display:  block;}
+
+    }
+}
+
+@media screen and (min-width: 1200px) { /*TV*/
+    body {
+        background-image: url("../imagens/back-tv.jpg");
+        #icon-phone { display:  none;}
+        #icon-tv { display:  block;}
+    }
+}

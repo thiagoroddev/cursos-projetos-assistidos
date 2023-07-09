@@ -1,0 +1,12 @@
+@charset "UTF-8";
+
+/*Configurações Smarth em pé*/
+
+
+body {
+    background-image: url(../imagens/cev-portrait.jpg);
+}
+
+h1 {
+ color: red;
+}

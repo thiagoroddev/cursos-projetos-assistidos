@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário com Soma</title>
+</head>
+<body>
+    <h1>Formulário com Soma</h1>
+    
+    <p>
+        <h2>Digite os números:</h2>
+
+    <label for="1num">Número 1:</label>
+    <input type="number" name="num1" id="inum1" oninput="ires.innerHTML = Number(inum1.value) + Number(inum2.value)">
+    </p>
+    <p>
+        <label for="inum2">Número 2:</label>
+        <input type="number" name="inum" id="inum2" oninput="ires.innerHTML = Number(inum1.value) + Number(inum2.value)">
+    </p>
+    <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+    </p>
+    <p>
+        <label for="ires">Resultado:</label>
+        <output name="res" id="ires">0</output>
+        
+    </p>
+
+    <p>
+        <label for="irang">Range:</label>
+        <input type="range" name="rang" id="irang" min="0" max="10"  oninput="resrang.innerHTML = Number(irang.value)" value="5">
+        <output id="resrang" >5</output>
+        
+    </p>
+
+    <h1>Cálculo de Idade</h1>
+    <p>
+        <label for="iano">Ano de nascimento:</label>
+        <input type="number" name ="ano" id="iano"  min="1900" max="2023" oninput= "calidade()">
+    </p>
+    <p>
+        <label for="iidade">Sua idade é:</label>
+        <output id="iidade">0</output>
+    </p>
+
+    <script>
+        function calidade() {
+            let atual = new Date().getFullYear()
+            iidade.innerHTML = Number(atual) - Number(iano.value)
+        }
+    </script>
+
+</body>
+</html>
+
+<!--
+O evento "oninput" é um evento JavaScript que é acionado quando o valor de um elemento de formulário é alterado pelo usuário. Ele pode ser usado em vários tipos de elementos de formulário, como campos de texto, caixas de seleção, caixas de verificação e assim por diante.
+
+O evento "oninput" é acionado imediatamente após o usuário interagir com o elemento de formulário, enquanto o evento "onchange" é acionado apenas quando o usuário interage com o elemento e, em seguida, perde o foco do mesmo.
+
+Você pode usar o evento "oninput" para realizar várias ações, como validar entradas do usuário, exibir sugestões de pesquisa em tempo real, atualizar dinamicamente elementos da página ou realizar cálculos em tempo real, entre outras coisas.
+
+Para usar o evento "oninput", você pode adicionar um atributo "oninput" ao elemento HTML e definir o código JavaScript que deseja executar quando o evento for acionado. Aqui está um exemplo básico que mostra como usar o evento "oninput" em um campo de texto:
+
+html
+Copy code
+<input type="text" oninput="myFunction()">
+
+<script>
+function myFunction() {
+  // Código JavaScript a ser executado quando o evento oninput for acionado
+  console.log("Valor alterado!");
+}
+</script>
+Nesse exemplo, a função myFunction é chamada toda vez que o usuário digita ou altera o valor no campo de texto. Você pode substituir o código dentro da função myFunction pelo seu próprio código personalizado para realizar as ações desejadas com base na entrada do usuário.
+
+Lembre-se de que o evento "oninput" pode ser usado em vários elementos de formulário, e o exemplo acima é apenas um caso simples de uso. Você pode adaptar o evento "oninput" para atender às suas necessidades específicas, dependendo do elemento de formulário que está sendo usado e da ação que deseja realizar.-->

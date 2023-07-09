@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>CALCULADORA</title>
+</head>
+<body>
+    <H1>Calculadora de SOMA</H1>
+    <input type="number" name="valor1" id="valor1"> +
+    <input type="number" name="valor2" id="valor2">
+    <input type="button" value="somar" onclick="calcular()">
+    <div id = 'texto'>Resultado</div>
+
+     <script>
+        function calcular () {
+        var valor01 = document.querySelector('input#valor1')
+        var valor02 = document.querySelector('input#valor2')
+        var res = document.getElementById('texto')
+        var n1 = Number(valor01.value)
+        var n2 = Number(valor02.value)
+        var somatotal = n1 + n2 
+        res.innerHTML = (`é ${somatotal}`)
+        }
+       
+     </script>
+</body>
+</html>

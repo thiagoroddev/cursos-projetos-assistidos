@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de email</title>
+</head>
+<body>
+    <h1>Formulário</h1>
+   <main>
+        <form action="cadastro.php" method="post">
+            <fieldset>
+                <legend>Dados Pessoais</legend>
+                <p>
+                    <label for="iname">Nome:</label>
+                    <input type="text" name="name" id="iname" required minlength="5" maxlength="20" placeholder="nome" autocomplete="name" size="15">
+                </p>
+    
+                <p>
+                    <label for="iemail">Email</label>
+                    <input type="email" name="email" id="iemail" required placeholder="email" autocomplete="email" size="15">
+                </p>
+
+                <p>
+                    <label for="itelefone">Telefone</label>
+                    <input type="tel" name="telefone" id="itelefone"  placeholder="(21) xxxx-xxxx" autocomplete="tel"  pattern="^\(\d{2}\)\d{4,5}-\d{4}$" required> <!--Estude do bre RegEx(Expressões regulares)-->
+                    <!--[0-9] é a mesma coisa que \d-->
+                    <!-- como se abre parentese no comanto pattern= "\(" e para fechar "\)"-->
+                </p>
+                <p>
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Limpar">
+                </p>
+            </fieldset>
+        </form>
+   </main>S
+</body>
+</html>

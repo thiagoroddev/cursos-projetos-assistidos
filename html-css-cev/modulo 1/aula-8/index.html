@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <h1>h1</h1>
+    <h2>h2</h2>
+    <h3>h3</h3>
+    <h4>h4</h4>
+    <h5>h5</h5>
+    <h6>h6</h6>
+<p><del> Texto deletado</del></p>
+<p><ins>Texto sublinhado</ins></p>
+<p>dasdasd <sup>Texto suspenso </sup></p>
+<p> <u>Texto Sublinhado </u> </p>
+<p> <mark> Texto marcado</mark> </mark> </p>
+<p>Citações completas: <blockquote> AFisdjfdsf fsoijfdkosofjs jsidfj</blockquote></p>
+<p>Abreviações> <abbr title="Titulo">fsdfsd</abbr></p>
+
+<P><Code>COdigo com espaços</Code></P>
+<p><pre>código com pré-formatação
+    fsdfsdf
+sdfsdf fsdfsdfsdfs fsddf s fsd fs dfs 
+</pre></p>
+
+<p>Testando símbolos:&copy;&trade;&real;&COPY;</p>
+    <p>Emojis: deve-se copiar o código de um site sem o (U-) e colocar &#x antes do código &#x1F600; </p>
+
+<p>Listas ordenadas: (type: A=abc, 1=1,2,3 , i= i,ii ,iii ,iv. I= I, II, III, IV)<ol>
+   <li>oi</li>
+   <li>eae</li>
+   <li>blz</li>
+   <li>é nois</li>
+</ol> </p>
+
+<p>listas não ordenadas (types: disc, circle, square):
+    <ul>
+        <li>oi</li>
+        <li>eae</li>
+        <li>blxz</li>
+        <li>é nois</li>
+    </ul>
+</p>
+<p>Lista de Definições:
+    <dt>HTML</dt>
+    <dd>Linguagem de marcação para a crianção do conteúdo de um site</dd>
+    <dt>CSS</dt>
+    <dd>Linguagem de marcação para a crianção do design de um site</dd>
+    <dt>JavaScript</dt>
+    <dd>Linguagem de programação para a criação de interatividade de um site</dd>
+</p>
+<h1>Usando links externos:</h1>
+<p>site do curso em vídeo: <a href="https://www.cursoemvideo.com/curso/html5-css3-modulo1/aulas/modulo-1-2/modulos/capitulo-10-aula-1-links-e-ancoras-em-html5/" target="_blank" rel="external">Curso sem vídeo</a> </p>
+<p>Esta é a  primeira página, <a href="segundapagina.html" rel="next" target="_self" >clicando aqui</a> você irá para  a segunda página</p>
+<p>Link para a terceira página: c<a href="Notícias/terceirapagina.html">lique aqui</a></p>
+
+<h1> Links para download:</h1>
+<li><a href="17 - Primeiro mini-projeto.pdf" download="17 - Primeiro mini-projeto.pdf" type="application/pdf"  target="_blank">Clique aqui para baixar o livro</a></li>
+
+
+<H1>Adicionando imagens responsivas (imagens que mudam conforme tamanho da tela)</H1>
+
+<picture>
+     <source media="(max-width: 800px)" srcset="imagens/pequena.png" type="image/png">
+    <source media="(max-width: 1250px )" srcset="imagens/media.png" type="image/png">
+   
+    <img src="imagens/grande.png" alt="GRANDE">
+</picture>
+
+<h1>Reproduzindo áudio no site</h1>
+<p>Vamos apender a adicionar audio em HTML5 (método 1)</p>
+<audio src="midia/y2meta.com - Deorro - Five Hours (Static Video) [LE7ELS] (320 kbps).mp3" controls autoplay></audio>
+
+
+<p>Método 2</p>
+<audio preload="metadata" autoplay controls>
+    <source src="midia/y2meta.com - Deorro - Five Hours (Static Video) [LE7ELS] (320 kbps).mp3" type="audio/mpeg">
+    <!-- source src="midia/yeta.com...ogg" type="audio/ogg"
+         source src="midia/yeta.com...wav" type="audio/wav"-->
+    <p>Seu navegador não é compatível</p>
+</audio>
+
+
+<h1>Adicionando vídeos hospedado localmente (custará caro para o cliente)</h1>
+<p>Vídeo hospedado no meu PC/servidor metodo 1</p>
+<video src="midia/video.mp4" width="500" controls></video>
+
+
+<p>Método 2</p>
+<video width="500">
+<source src="midia/video.mp4" type="video/mp4">
+<!-- source src = midia/video.m4v" type="video/mp4"
+     source src = midia/video.webm" type="video/webm"
+     source src = midia/video.ogv" type="video/ogg"-->
+
+<p>Seu navegador não é compatível com o vídeo</p>
+
+</video>
+
+<h1>Inserindo vídeos do youtube</h1>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/3PlLrmxHOus" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+<h1>Inserindo vídeos do Daylymotion</h1>
+<div style="position:relative;padding-bottom:56.25%;height:0;overflow:hidden;"> <iframe style="width:50%;height:50%;position:absolute;left:0px;top:0px;overflow:hidden" frameborder="0" type="text/html" src="https://www.dailymotion.com/embed/video/x81qgh4" width="50%" height="50%" allowfullscreen title="Dailymotion Video Player" > </iframe> </div>
+
+
+
+
+<!--Testando-->
+
+</body>
+</html>
