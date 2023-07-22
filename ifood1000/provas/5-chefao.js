@@ -31,7 +31,7 @@ NAO PODE ENFRENTAR
 Explicação
 Apesar do jogador ter conseguido coletar dois dois itens necessários, o machado e o sapato, ele não conseguiu obter a espada. */
 
-function solucao(itensColetados = ["capa", "arco", "flecha", "machado", "escudo", "comida", "sapato", "capacete","espada"], itemNecessario1 = "machado", itemNecessario2 = "espada", itemNecessario3 = "sapato") {
+function solucao(itensColetados = ["capa", "arco", "flecha", "machado", "escudo", "comida", "sapato", "capacete", "espada"], itemNecessario1 = "machado", itemNecessario2 = "espada", itemNecessario3 = "sapatou") {
     // seu codigo aqui
 
 var itensNecessarios = 0; 
