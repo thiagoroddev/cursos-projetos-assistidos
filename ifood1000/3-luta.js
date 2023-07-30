@@ -40,6 +40,7 @@ PODEM LUTAR
 Explicação 1
 Um dos lutadores pesa 60 kg e o outro pesa 64 kg. Como ambos são da categoria dos pesos meio-médios, eles podem lutar.
 
+---
 Entrada 2
 peso1 = 55
 
